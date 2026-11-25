@@ -2,7 +2,7 @@
 
 **Academic smart-glasses concept and tested software prototype. This repository replaces its earlier facial-expression-classification contents **at the repository owner's request**. The GitHub repository URL retains its old name; the project described here is the Smart Glasses Profile Analyser.
 
-**Team:** K. Shiva Kiran, S. Abhi Ram, T. Abhilash; the earlier course-project version also credits P. Sai Preetham.
+**Team:** S. Abhi Ram, K. Shiva Kiran, T. Abhilash; the earlier course-project version also credits P. Sai Preetham.
 
 ## Original project idea
 The proposed glasses mount a camera and small processor to capture a student's face, identify the student from an enrolled database, and show their profile using a near-eye display. The reports describe five original fields: hall-ticket ID, name, phone, photograph, and hobbies.
