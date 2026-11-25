@@ -1,6 +1,6 @@
 # Profile Analyser Through Smart Glasses
 
-**Academic smart-glasses concept and tested software prototype (SR University, 2021–2023)**. This repository replaces its earlier facial-expression-classification contents **at the repository owner's request**. The GitHub repository URL retains its old name; the project described here is the Smart Glasses Profile Analyser.
+**Academic smart-glasses concept and tested software prototype. This repository replaces its earlier facial-expression-classification contents **at the repository owner's request**. The GitHub repository URL retains its old name; the project described here is the Smart Glasses Profile Analyser.
 
 **Team:** K. Shiva Kiran, S. Abhi Ram, T. Abhilash; the earlier course-project version also credits P. Sai Preetham.
 
