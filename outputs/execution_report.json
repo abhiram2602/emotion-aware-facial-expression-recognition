@@ -1,0 +1,7 @@
+{
+  "test_suite": "3/3 passed",
+  "real_uploaded_image_execution": "passed",
+  "sample_face_count": 3,
+  "identity_accuracy": "not measured",
+  "original_private_records_published": false
+}

@@ -1,0 +1,7 @@
+private_data/
+*.xlsx
+*.rar
+*.zip
+*.jpg
+*.png
+__pycache__/

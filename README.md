@@ -1,16 +1,37 @@
-# Emotion-Aware Safety System Using Facial Expression Recognition
+# Profile Analyser Through Smart Glasses
 
-Seven-class CNN image classification academic project. The original method uses **96×96 images**, TensorFlow/Keras and **15 epochs**.
+**Academic smart-glasses concept and tested software prototype (SR University, 2021–2023)**. This repository replaces its earlier facial-expression-classification contents **at the repository owner's request**. The GitHub repository URL retains its old name; the project described here is the Smart Glasses Profile Analyser.
 
-## Run
+**Team:** K. Shiva Kiran, S. Abhi Ram, T. Abhilash; the earlier course-project version also credits P. Sai Preetham.
+
+## Original project idea
+The proposed glasses mount a camera and small processor to capture a student's face, identify the student from an enrolled database, and show their profile using a near-eye display. The reports describe five original fields: hall-ticket ID, name, phone, photograph, and hobbies.
+
+## What actually runs
+The available Python prototype:
+- Detects face regions in a supplied image with OpenCV's Haar cascade.
+- Looks up a **synthetic** student profile using an **explicitly supplied student ID**.
+- Saves an annotated detection image locally and a JSON result.
+
+**This is not facial identity recognition**: it cannot infer the student's ID from a face. Physical glasses, projector display, and biometric identification are not implemented.
+
+## Install and test
+Use Python 3.10+:
+
 ```bash
-pip install -r requirements.txt
-# Extract your original Dataset(1).zip so data/processed_data has seven class folders
-python src/train.py --data data/processed_data --output outputs/full_run --epochs 15
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python src/app.py --image /path/to/consented_photo.jpg --student-id DEMO001
 ```
 
-The academic report states **62.64% accuracy** and **1.1862 loss**. These values have **not** been independently reproduced. The script saves measured validation accuracy, loss, model, confusion matrix and learning curves.
+The last command creates `outputs/detected_faces.jpg` locally and `outputs/result.json`. The sample image is **not** shipped in this repository. `data/demo_profiles.csv` is fictitious; no original student dataset is published.
 
-The dataset is not redistributed because its license has not been established. Facial expression is not a reliable proxy for internal emotion or personal safety; this is a research demonstration.
+## Verified outputs
+Automated tests: **3 of 3 passed**. Previous supplied-image execution detected **three face regions** and generated the JSON in `outputs/result.json`. This is a face detection count, **not** a student-identification accuracy.
 
-Original notebooks, reports, presentation and demo video are available in the full ChatGPT project archive.
+See [execution report](outputs/execution_report.json) and [project alignment](PROJECT_ALIGNMENT.md).
+
+## Privacy and responsible use
+The supplied XLSX files and source images contain real people's private data. They are not redistributed. This demonstration should only be used on images obtained with informed consent. Avoid using biometric identity detection or public disclosure of student profiles without a legal basis, consent, access controls, and independent evaluation.
+
+No hardware functionality or recognition accuracy is claimed.

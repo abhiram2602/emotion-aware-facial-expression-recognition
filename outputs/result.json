@@ -1,0 +1,9 @@
+{
+  "faces_detected": 3,
+  "profile": {
+    "student_id": "DEMO001",
+    "display_name": "Alex Example",
+    "hobbies": "Photography"
+  },
+  "identity_matching": "not performed; user-supplied ID lookup only"
+}
